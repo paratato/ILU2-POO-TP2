@@ -13,7 +13,8 @@ public class BoundaryPrendreEtal {
 	}
 
 	public void prendreEtal(String nomVendeur) {
-		//TODO a completer
+		bool nomVendeurConnu = controlPrendreEtal.verifierIdentite(nomVendeur);
+		
 	}
 
 	private void installerVendeur(String nomVendeur) {
