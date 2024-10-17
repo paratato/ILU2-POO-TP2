@@ -10,7 +10,12 @@ public class BoundaryLibererEtal {
 	}
 
 	public void libererEtal(String nomVendeur) {
-		//TODO a completer
+		boolean vendeurReconnu = (controlLibererEtal.isVendeur(nomVendeur)!=null);
+		if(!vendeurReconnu) {
+			Systeme.out.println("Mais vous n'êtes pas inscrit sur notre marché aujourd'hui !");
+		} else {
+			String[] donneesEtal[] = controleLibererEtal(nomVendeur);
+		}
 	}
 
 }
