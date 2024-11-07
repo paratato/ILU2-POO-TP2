@@ -18,7 +18,7 @@ public class TestControleursDesCas {
 
 		//TODO decommenter les cas au fur et a mesure que vous avancez dans le TP
 		
-		Village village = new Village("le village des irrÃ©ductibles", 10, 5);
+		Village village = new Village("le village des irréductibles", 10, 5);
 		Chef abraracourcix = new Chef("Abraracourcix", 10, village);
 		village.setChef(abraracourcix);
 		Gaulois asterix = new Gaulois("Asterix", 6);

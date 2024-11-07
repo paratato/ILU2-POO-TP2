@@ -10,8 +10,7 @@ public class ControlAfficherMarche {
 	}
 	
 	public String[] donnerInfosMarche() {
-		String[] infosMarche = new String[village.Marche.getNbEtalsOccupe() * 3]
-		infosMarche = village.donnerEtatMarche();
+		String[] infosMarche = village.donnerEtatMarche();
 		return infosMarche;
 	}
 }

@@ -10,11 +10,15 @@ public class BoundaryLibererEtal {
 	}
 
 	public void libererEtal(String nomVendeur) {
-		boolean vendeurReconnu = (controlLibererEtal.isVendeur(nomVendeur)!=null);
+		boolean vendeurReconnu = (controlLibererEtal.isVendeur(nomVendeur)!=null); //isVendeur renvoie un type Etal qui n'est pas defini ici
 		if(!vendeurReconnu) {
-			Systeme.out.println("Mais vous n'êtes pas inscrit sur notre marché aujourd'hui !");
+			System.out.println("Mais vous n'êtes pas inscrit sur notre marché aujourd'hui !");
 		} else {
-			String[] donneesEtal[] = controleLibererEtal(nomVendeur);
+			String[] donneesEtal = controlLibererEtal.libererEtal(nomVendeur);
+			if(donneesEtal[0] == "true") {
+				System.out.println("Vous avez vendu " + donneesEtal[4] + " sur " + donneesEtal[3] + " " + donneesEtal[2]);
+				System.out.println("Au revoir " + nomVendeur + ", passez une bonne journée");
+			}
 		}
 	}
 
